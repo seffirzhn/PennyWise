@@ -1,0 +1,319 @@
+/* General Reset */
+* {
+    margin: 10;
+    padding: 10;
+    box-sizing: content-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color:  #4a90e2;
+    color: #000000;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Heading */
+h2, h3 {
+    white-space: nowrap;
+    text-align: center;
+    color: #240606;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+form input, form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
+form button {
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #357ab7;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 14px;
+}
+
+th {
+    background-color: #4a90e2;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+td a {
+    color: #e74c3c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+td a:hover {
+    color: #c0392b;
+    text-decoration: underline;
+}
+
+/* Alert Messages */
+.alert {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.alert.success {
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+.alert.error {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+/* Login & Register Page Styling */
+.login-container, .register-container {
+    width: 100%;
+    max-width: 400px;
+    min-width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+}
+
+.login-container h2, .register-container h2 {
+    color: #4a90e2;
+    margin-bottom: 20px;
+}
+
+.login-container form input, .register-container form input {
+    color: #000000; 
+    background-color: #fc0000; 
+    margin: 10px 0;
+}
+
+.login-container p, .register-container p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.login-container a, .register-container a {
+    color: #4a90e2;
+    text-decoration: none;
+}
+
+.login-container a:hover, .register-container a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.alert-error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; /* Menyebarkan elemen ke kiri dan kanan */
+    align-items: center; /* Vertikal tengah */
+    background: #f8f9fa; /* Warna latar belakang */
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc; /* Garis bawah */
+}
+
+.logout-btn {
+    text-decoration: none;
+    color: white;
+    background-color: #dc3545; /* Warna merah */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.logout-btn:hover {
+    background-color: #c82333; /* Warna lebih gelap saat hover */
+}
+
+/* Styling untuk Footer */
+.footer {
+    position: fixed; /* Tetap di bawah layar */
+    bottom: 0; /* Menempel di bawah */
+    left: 0;
+    width: 100%; /* Lebar penuh */
+    text-align: center; /* Teks di tengah */
+    background-color: #f8f9fa; /* Warna latar belakang */
+    padding: 10px 0; /* Padding atas dan bawah */
+    color: #333; /* Warna teks */
+    font-weight: bold;
+    border-top: 1px solid #ccc; /* Garis atas tipis */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.nav-link:hover {
+    background-color: #0056b3;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ccc;
+}
+
+.logout-btn {
+    text-decoration: none;
+    color: white;
+    background-color: #dc3545;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.logout-btn:hover {
+    background-color: #c82333;
+}
+
+/* Styling untuk Navigasi Sidebar */
+.sidebar {
+    width: 80px;
+    height: 95vh;
+    background-color: #f7fafc;
+    padding: 15px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-right: 1px solid #ccc;
+}
+
+.sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.nav-link {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.nav-link img {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.logout-btn {
+    text-decoration: none;
+    color: white;
+    background-color: #dc3545;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 15px;
+    width: calc(100% - 30px);
+    text-align: center;
+}
+
+.content {
+    margin-left: 220px;
+    padding: 20px;
+}
